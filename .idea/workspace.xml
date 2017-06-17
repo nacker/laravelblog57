@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66c8b882-7981-4d4a-9955-6cf989f89cc4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/01/1_base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/01/2_base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/01/3_base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/01/4_base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/01/jquery-1.7.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/01/php核心知识纲要.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/02/1php_tag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/02/2variable_base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01_Base/02/3variable.php" />
-    </list>
+    <list default="true" id="66c8b882-7981-4d4a-9955-6cf989f89cc4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +25,8 @@
       <file leaf-file-name="3variable.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01_Base/02/3variable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -255,18 +244,17 @@
       <option name="presentableId" value="Default" />
       <updated>1497643306503</updated>
       <workItem from="1497643308149" duration="324000" />
-      <workItem from="1497645238330" duration="563000" />
+      <workItem from="1497645238330" duration="1185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="887000" />
+    <option name="totallyTimeSpent" value="1509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="410" y="23" width="1140" height="733" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25409836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25409836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -307,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01_Base/02/3variable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
