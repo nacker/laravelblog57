@@ -5,16 +5,16 @@
 大纲
 ====
 ----------
-- 第一章：[php基础](https://github.com/nacker/phpProject/tree/master/01_Base)
+- 第一章：[php基础](01_Base/README.md)
 
-    - [第1节](https://github.com/nacker/phpProject/tree/master/01_Base/01)
+    - [第1节](01_Base/01/README.md)
 	   - 1).变量：
 	   - 2).变量命名规范
 	   - 3).数据类型
 	   - 4).常量
 	   - 5).运算符
 
-    - [第2节](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+    - [第2节](01_Base/02/README.md)
 	   - 1).注释
 	   - 2).流程控制
 	   - 3).了解系统预定义常量
