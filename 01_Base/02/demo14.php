@@ -9,7 +9,7 @@
 	</head>
 <body>
 <?php
-	require_once('public/header1.html');
+	require_once('public/header.html');
 ?>
 <div id="div2">主体内容</div>
 <?php include('public/footer.html');?>
