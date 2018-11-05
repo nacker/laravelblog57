@@ -356,3 +356,219 @@ function myTest() {
 myTest();    // 输出 "欢迎访问 Runoob.com"
 ?>
 ```
+
+# 6、运算符
+## 6.1 算术运算符
+```
+<?php 
+$x=10; 
+$y=6;
+echo ($x + $y); // 输出16
+echo '<br>';  // 换行
+ 
+echo ($x - $y); // 输出4
+echo '<br>';  // 换行
+ 
+echo ($x * $y); // 输出60
+echo '<br>';  // 换行
+ 
+echo ($x / $y); // 输出1.6666666666667
+echo '<br>';  // 换行
+ 
+echo ($x % $y); // 输出4
+echo '<br>';  // 换行
+ 
+echo -$x;
+?>
+```
+## 6.2赋值运算符
+以下实例演示了使用不同赋值运算符得到的不同结果：
+
+```
+<?php 
+$x=10; 
+echo $x; // 输出10
+ 
+$y=20; 
+$y += 100;
+echo $y; // 输出120
+ 
+$z=50;
+$z -= 25;
+echo $z; // 输出25
+ 
+$i=5;
+$i *= 6;
+echo $i; // 输出30
+ 
+$j=10;
+$j /= 5;
+echo $j; // 输出2
+ 
+$k=15;
+$k %= 4;
+echo $k; // 输出3
+?>
+```
+
+以下实例演示了使用不同字符串运算符得到的相同结果：
+
+```
+<?php
+$a = "Hello";
+$b = $a . " world!";
+echo $b; // 输出Hello world! 
+ 
+$x="Hello";
+$x .= " world!";
+echo $x; // 输出Hello world! 
+?>
+```
+
+## 6.3 递增/递减运算符
+```
+<?php
+$x=10; 
+echo ++$x; // 输出11
+ 
+$y=10; 
+echo $y++; // 输出10
+ 
+$z=5;
+echo --$z; // 输出4
+ 
+$i=5;
+echo $i--; // 输出5
+?>
+```
+## 6.4 比较运算符
+```
+<?php
+$x=100; 
+$y="100";
+ 
+var_dump($x == $y);
+echo "<br>";
+var_dump($x === $y);
+echo "<br>";
+var_dump($x != $y);
+echo "<br>";
+var_dump($x !== $y);
+echo "<br>";
+ 
+$a=50;
+$b=90;
+ 
+var_dump($a > $b);
+echo "<br>";
+var_dump($a < $b);
+?>
+```
+
+## 6.5 逻辑运算符
+运算符 | 名称 | 描述 |
+---|---|---|
+x and y | 与 | 如果 x 和 y 都为 true |
+x or y | 或 |	如果 x 和 y 至少有一个为 true，则返回 true |
+x xor y | 异或 | 如果 x 和 y 有且仅有一个为 true，则返回 true | 
+x && y | 与 | 如果 x 和 y 都为 true，则返回 true | 
+x \|\| y | 或 | 如果 x 和 y 至少有一个为 true，则返回 true | 
+! x | 非 | 如果 x 不为 true，则返回 true
+
+## 6.6 数组运算符
+```
+<?php
+$x = array("a" => "red", "b" => "green"); 
+$y = array("c" => "blue", "d" => "yellow"); 
+$z = $x + $y; // $x 和 $y 数组合并
+var_dump($z);
+var_dump($x == $y);
+var_dump($x === $y);
+var_dump($x != $y);
+var_dump($x <> $y);
+var_dump($x !== $y);
+?>
+```
+
+## 6.7 三元运算符
+```
+<?php
+$test = '菜鸟教程';
+// 普通写法
+$username = isset($test) ? $test : 'nobody';
+echo $username, PHP_EOL;
+ 
+// PHP 5.3+ 版本写法
+$username = $test ?: 'nobody';
+echo $username, PHP_EOL;
+?>
+```
+
+## 6.8 组合比较符(PHP7+)
+```
+<?php
+// 整型
+echo 1 <=> 1; // 0
+echo 1 <=> 2; // -1
+echo 2 <=> 1; // 1
+ 
+// 浮点型
+echo 1.5 <=> 1.5; // 0
+echo 1.5 <=> 2.5; // -1
+echo 2.5 <=> 1.5; // 1
+ 
+// 字符串
+echo "a" <=> "a"; // 0
+echo "a" <=> "b"; // -1
+echo "b" <=> "a"; // 1
+?>
+```
+## 6.9 运算符优先级
+```
+<?php
+// 优先级： &&  >  =  >  and
+// 优先级： ||  >  =  >  or
+ 
+$a = 3;
+$b = false;
+$c = $a or $b;
+var_dump($c);          // 这里的 $c 为 int 值3，而不是 boolean 值 true
+$d = $a || $b;
+var_dump($d);          //这里的 $d 就是 boolean 值 true 
+?>
+```
+
+# 7、If...Else 语句
+## 7.1 if 语句
+```
+if (条件)
+{
+    条件成立时要执行的代码;
+}
+```
+## 7.2 if...else 语句
+```
+if (条件)
+{
+	条件成立时执行的代码;
+}
+else
+{
+	条件不成立时执行的代码;
+} 
+```
+## 7.3 if...elseif....else 语句
+```
+if (条件)
+{
+    if 条件成立时执行的代码;
+}
+elseif (条件)
+{
+    elseif 条件成立时执行的代码;
+}
+else
+{
+    条件不成立时执行的代码;
+}
+```
