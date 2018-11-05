@@ -98,4 +98,104 @@ $num5 = -0;
 var_dump($num5);
 $age = 18;   //整型
 ```
+## 2.Float:浮点型
+说明：小数，负小数和正小数和0.0
+
+```
+<?php
+//float类型
+$num1 = 0.0;  //小数
+var_dump($num1);
+$num2 = -1.0;  //小数
+var_dump($num2);
+?>
+```
+## 3.String：字符串型
+* 说明：只要是任何类型的数据加上引号（单引号和双引号）,就是字符串型。
+* 引号：分单引号和双引号
+* 单引号和双引号的区别：
+双引号可以解析变量，单引号不能解析变量
+
+```
+<?php
+//string类型
+$str1 = '你好';
+var_dump($str1);
+$str2 = "您好";
+var_dump($str2);
+$str3 = '1';  //失去了本身类型
+$str4 = "0.0"; //失去了本身类型
+var_dump($str3,$str4);
+$str5 = 'php';
+$str6 = "我在{$str5}";  //解析了变量
+$str7 = '我在{$str5}';  //没有解析变量
+var_dump($str7);
+//大量的HTML代码
+$str8 = '<ul><li>1</li><li>2</li><li>3</li></ul>';
+echo $str8;
+//heredoc
+$str9 = <<<DDD
+	<ul>
+		<li>$str5</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+DDD;
+echo $str9;
+$str10 = <<<'FFF'
+	<ul>
+		<li>$str5</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+FFF;
+echo $str10;
+?>
+```
+
+## 4.Boolean：布尔型
+说明：布尔型只有两个值，真(true)和假(false)，布尔值是和一些其他方式配合使用。如：流程语句
+
+```
+<?php
+//boolean：布尔型
+$a = null;   //真$b = false;  //假
+var_dump($a,$b);$a = '';  //空字符串
+//var_dump($a);
+//布尔值是和一些其他方式配合使用。如：流程语句
+if($a){
+	echo '为真';
+}else{
+	echo '为假';
+}
+echo '<br>';
+$b = 10;
+if($b == 10) {
+	echo "真";
+}else{
+	echo "假";
+}
+?>
+```
+
+## 5.Null：空类型
+说明：没有任何值的一个给变量定义赋值方式。
+
+```
+<?php
+//其他类型
+//null：为了占用变量名。
+$a = null;   //空  
+var_dump($a);
+if(isset($a)){  //不存在
+	echo "存在";
+}
+```
+
+## 6.Resource：资源
+* 说明：资源说的不是一种具体的值，而是一个概念的多种数据的统称；
+* 多种数据：上传文件、加载图片、路径、数据库等这些都称为“外部资源”，不是php本身就可以定义的数据。
+
+# 四、运算符
+
 
