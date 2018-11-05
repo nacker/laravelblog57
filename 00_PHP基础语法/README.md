@@ -572,3 +572,192 @@ else
     条件不成立时执行的代码;
 }
 ```
+## 7.4 Switch 语句
+语法
+
+```
+<?php
+switch (n)
+{
+case label1:
+    如果 n=label1，此处代码将执行;
+    break;
+case label2:
+    如果 n=label2，此处代码将执行;
+    break;
+default:
+    如果 n 既不等于 label1 也不等于 label2，此处代码将执行;
+}
+?>
+```
+实例
+
+```
+<?php
+$favcolor="red";
+switch ($favcolor)
+{
+case "red":
+    echo "你喜欢的颜色是红色!";
+    break;
+case "blue":
+    echo "你喜欢的颜色是蓝色!";
+    break;
+case "green":
+    echo "你喜欢的颜色是绿色!";
+    break;
+default:
+    echo "你喜欢的颜色不是 红, 蓝, 或绿色!";
+}
+?>
+```
+
+## 7.5 数组
+
+* 数值数组 - 带有数字 ID 键的数组
+* 关联数组 - 带有指定的键的数组，每个键关联一个值
+* 多维数组 - 包含一个或多个数组的数组
+
+### 7.5.1 数值数组
+```
+<?php
+$cars=array("Volvo","BMW","Toyota");
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+?>
+```
+### 7.5.2 获取数组的长度 - count() 函数
+```
+<?php
+$cars=array("Volvo","BMW","Toyota");
+echo count($cars);
+?>
+```
+
+### 7.5.3 遍历数值数组
+```
+<?php
+$cars=array("Volvo","BMW","Toyota");
+$arrlength=count($cars);
+ 
+for($x=0;$x<$arrlength;$x++)
+{
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+```
+
+### 7.5.4 PHP 关联数组
+```
+<?php
+$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+echo "Peter is " . $age['Peter'] . " years old.";
+?>
+```
+### 7.5.5 遍历关联数组
+```
+<?php
+$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+ 
+foreach($age as $x=>$x_value)
+{
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+```
+
+# 8、数组排序
+* sort() - 对数组进行升序排列
+* rsort() - 对数组进行降序排列
+* asort() - 根据关联数组的值，对数组进行升序排列
+* ksort() - 根据关联数组的键，对数组进行升序排列
+* arsort() - 根据关联数组的值，对数组进行降序排列
+* krsort() - 根据关联数组的键，对数组进行降序排列
+
+# 9、PHP 超级全局变量
+* $GLOBALS
+* $_SERVER
+* $_REQUEST
+* $_POST
+* $_GET
+* $_FILES
+* $_ENV
+* $_COOKIE
+* $_SESSION
+
+# 10、While 循环
+## 10.1 while 循环
+```
+while (条件)
+{
+    要执行的代码;
+}
+```
+## 10.2 do...while 语句
+```
+do
+{
+    要执行的代码;
+}
+while (条件);
+```
+
+# 11、循环 - For 循环
+## 11.1 For 循环
+```
+for (初始值; 条件; 增量)
+{
+    要执行的代码;
+}
+```
+
+## 11.2 foreach 循环
+```
+foreach ($array as $value)
+{
+    要执行代码;
+}
+```
+
+# 12、 函数
+## 12.1 创建 PHP 函数
+```
+<?php
+function functionName()
+{
+    // 要执行的代码
+}
+?>
+```
+
+## 12.2 添加参数
+```
+<?php
+function writeName($fname,$punctuation)
+{
+    echo $fname . " Refsnes" . $punctuation . "<br>";
+}
+ 
+echo "My name is ";
+writeName("Kai Jim",".");
+echo "My sister's name is ";
+writeName("Hege","!");
+echo "My brother's name is ";
+writeName("Ståle","?");
+?>
+
+```
+
+## 12.3 返回值
+```
+<?php
+function add($x,$y)
+{
+    $total=$x+$y;
+    return $total;
+}
+ 
+echo "1 + 16 = " . add(1,16);
+?>
+```
